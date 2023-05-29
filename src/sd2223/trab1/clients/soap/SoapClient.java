@@ -13,7 +13,10 @@ import jakarta.xml.ws.BindingProvider;
 import jakarta.xml.ws.WebServiceException;
 import sd2223.trab1.api.java.Result;
 import sd2223.trab1.api.java.Result.ErrorCode;
+import sd2223.trab1.clients.tls.InsecureHostnameVerifier;
 import utils.Sleep;
+
+import javax.net.ssl.HttpsURLConnection;
 
 /**
 * 
@@ -41,6 +44,8 @@ abstract public class SoapClient {
 	
 	public SoapClient(String uri) {
 		this.uri = uri;
+		HttpsURLConnection.setDefaultHostnameVerifier(new InsecureHostnameVerifier());
+
 	}
 
 	protected void setTimeouts(BindingProvider port ) {
