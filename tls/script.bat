@@ -1,5 +1,6 @@
 rm -f *.jks
 
+
 keytool -genkey -alias users0 -keyalg RSA -validity 365 -keystore users0.jks -storetype pkcs12 -ext SAN=dns:users0-ourorg0 << EOF
 users0pwd
 users0pwd
@@ -13,6 +14,7 @@ yes
 firstkey
 firstkey
 EOF
+
 
 keytool -exportcert -alias users0 -keystore users0.jks -file servers.cert << EOF
 users0pwd
