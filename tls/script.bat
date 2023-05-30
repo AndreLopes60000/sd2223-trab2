@@ -72,7 +72,7 @@ changeit
 yes
 EOF
 
-keytool -genkey -alias feeds0-ourorg0 -keyalg RSA -validity 365 -keystore feeds0-0.jks -storetype pkcs12 -ext SAN=dns:feeds0-ourorg0 << EOF
+keytool -genkey -alias feeds0-0 -keyalg RSA -validity 365 -keystore feeds0-0.jks -storetype pkcs12 -ext SAN=dns:feeds0-ourorg0 << EOF
 feeds0-0pwd
 feeds0-0pwd
 Feeds.Feeds
@@ -95,7 +95,7 @@ changeit
 yes
 EOF
 
-keytool -genkey -alias feeds1-ourorg0 -keyalg RSA -validity 365 -keystore feeds1-0.jks -storetype pkcs12 -ext SAN=dns:feeds1-ourorg0 << EOF
+keytool -genkey -alias feeds1-0 -keyalg RSA -validity 365 -keystore feeds1-0.jks -storetype pkcs12 -ext SAN=dns:feeds1-ourorg0 << EOF
 feeds1-0pwd
 feeds1-0pwd
 Feeds.Feeds
@@ -118,7 +118,7 @@ changeit
 yes
 EOF
 
-keytool -genkey -alias feeds2-ourorg0 -keyalg RSA -validity 365 -keystore feeds2-0.jks -storetype pkcs12 -ext SAN=dns:feeds2-ourorg0 << EOF
+keytool -genkey -alias feeds2-0 -keyalg RSA -validity 365 -keystore feeds2-0.jks -storetype pkcs12 -ext SAN=dns:feeds2-ourorg0 << EOF
 feeds2-0pwd
 feeds2-0pwd
 Feeds.Feeds
@@ -141,7 +141,7 @@ changeit
 yes
 EOF
 
-keytool -genkey -alias feeds0-ourorg1 -keyalg RSA -validity 365 -keystore feeds0-1.jks -storetype pkcs12 -ext SAN=dns:feeds0-ourorg1 << EOF
+keytool -genkey -alias feeds0-1 -keyalg RSA -validity 365 -keystore feeds0-1.jks -storetype pkcs12 -ext SAN=dns:feeds0-ourorg1 << EOF
 feeds0-1pwd
 feeds0-1pwd
 Feeds.Feeds
@@ -164,7 +164,7 @@ changeit
 yes
 EOF
 
-keytool -genkey -alias feeds1-ourorg1 -keyalg RSA -validity 365 -keystore feeds1-1.jks -storetype pkcs12 -ext SAN=dns:feeds1-ourorg1 << EOF
+keytool -genkey -alias feeds1-1 -keyalg RSA -validity 365 -keystore feeds1-1.jks -storetype pkcs12 -ext SAN=dns:feeds1-ourorg1 << EOF
 feeds1-1pwd
 feeds1-1pwd
 Feeds.Feeds
@@ -187,7 +187,7 @@ changeit
 yes
 EOF
 
-keytool -genkey -alias feeds2-ourorg1 -keyalg RSA -validity 365 -keystore feeds2-1.jks -storetype pkcs12 -ext SAN=dns:feeds2-ourorg1 << EOF
+keytool -genkey -alias feeds2-1 -keyalg RSA -validity 365 -keystore feeds2-1.jks -storetype pkcs12 -ext SAN=dns:feeds2-ourorg1 << EOF
 feeds2-1pwd
 feeds2-1pwd
 Feeds.Feeds
@@ -210,7 +210,7 @@ changeit
 yes
 EOF
 
-keytool -genkey -alias feeds0-ourorg2 -keyalg RSA -validity 365 -keystore feeds0-2.jks -storetype pkcs12 -ext SAN=dns:feeds0-ourorg2 << EOF
+keytool -genkey -alias feeds0-2 -keyalg RSA -validity 365 -keystore feeds0-2.jks -storetype pkcs12 -ext SAN=dns:feeds0-ourorg2 << EOF
 feeds0-2pwd
 feeds0-2pwd
 Feeds.Feeds
@@ -233,7 +233,7 @@ changeit
 yes
 EOF
 
-keytool -genkey -alias feeds1-ourorg2 -keyalg RSA -validity 365 -keystore feeds1-2.jks -storetype pkcs12 -ext SAN=dns:feeds1-ourorg2 << EOF
+keytool -genkey -alias feeds1-2 -keyalg RSA -validity 365 -keystore feeds1-2.jks -storetype pkcs12 -ext SAN=dns:feeds1-ourorg2 << EOF
 feeds1-2pwd
 feeds1-2pwd
 Feeds.Feeds
@@ -256,7 +256,7 @@ changeit
 yes
 EOF
 
-keytool -genkey -alias feeds2-ourorg2 -keyalg RSA -validity 365 -keystore feeds2-2.jks -storetype pkcs12 -ext SAN=dns:feeds2-ourorg2 << EOF
+keytool -genkey -alias feeds2-2 -keyalg RSA -validity 365 -keystore feeds2-2.jks -storetype pkcs12 -ext SAN=dns:feeds2-ourorg2 << EOF
 feeds2-2pwd
 feeds2-2pwd
 Feeds.Feeds
