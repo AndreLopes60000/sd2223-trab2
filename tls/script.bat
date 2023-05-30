@@ -22,7 +22,7 @@ EOF
 
 cp cacerts client-ts.jks
 keytool -importcert -file servers.cert -alias users0 -keystore client-ts.jks << EOF
-clienttrustpwd
+changeit
 yes
 EOF
 
@@ -45,7 +45,7 @@ users1pwd
 EOF
 
 keytool -importcert -file servers.cert -alias users1 -keystore client-ts.jks << EOF
-clienttrustpwd
+changeit
 yes
 EOF
 
@@ -68,7 +68,7 @@ users2pwd
 EOF
 
 keytool -importcert -file servers.cert -alias users2 -keystore client-ts.jks << EOF
-clienttrustpwd
+changeit
 yes
 EOF
 
@@ -91,7 +91,7 @@ feeds0-0pwd
 EOF
 
 keytool -importcert -file servers.cert -alias feeds0-0 -keystore client-ts.jks << EOF
-clienttrustpwd
+changeit
 yes
 EOF
 
@@ -114,7 +114,7 @@ feeds1-0pwd
 EOF
 
 keytool -importcert -file servers.cert -alias feeds1-0 -keystore client-ts.jks << EOF
-clienttrustpwd
+changeit
 yes
 EOF
 
@@ -137,7 +137,7 @@ feeds2-0pwd
 EOF
 
 keytool -importcert -file servers.cert -alias feeds2-0 -keystore client-ts.jks << EOF
-clienttrustpwd
+changeit
 yes
 EOF
 
@@ -160,7 +160,7 @@ feeds0-1pwd
 EOF
 
 keytool -importcert -file servers.cert -alias feeds0-1 -keystore client-ts.jks << EOF
-clienttrustpwd
+changeit
 yes
 EOF
 
@@ -183,7 +183,7 @@ feeds1-1pwd
 EOF
 
 keytool -importcert -file servers.cert -alias feeds1-1 -keystore client-ts.jks << EOF
-clienttrustpwd
+changeit
 yes
 EOF
 
@@ -206,7 +206,7 @@ feeds2-1pwd
 EOF
 
 keytool -importcert -file servers.cert -alias feeds2-1 -keystore client-ts.jks << EOF
-clienttrustpwd
+changeit
 yes
 EOF
 
@@ -229,7 +229,7 @@ feeds0-2pwd
 EOF
 
 keytool -importcert -file servers.cert -alias feeds0-2 -keystore client-ts.jks << EOF
-clienttrustpwd
+changeit
 yes
 EOF
 
@@ -252,7 +252,7 @@ feeds1-2pwd
 EOF
 
 keytool -importcert -file servers.cert -alias feeds1-2 -keystore client-ts.jks << EOF
-clienttrustpwd
+changeit
 yes
 EOF
 
@@ -275,6 +275,6 @@ feeds2-2pwd
 EOF
 
 keytool -importcert -file servers.cert -alias feeds2-2 -keystore client-ts.jks << EOF
-clienttrustpwd
+changeit
 yes
 EOF
