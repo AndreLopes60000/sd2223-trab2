@@ -11,8 +11,13 @@ import java.util.logging.Logger;
 import com.sun.net.httpserver.HttpsConfigurator;
 import com.sun.net.httpserver.HttpsServer;
 import jakarta.xml.ws.Endpoint;
+import sd2223.trab1.api.java.Feeds;
+import sd2223.trab1.api.java.FeedsPull;
+import sd2223.trab1.api.java.FeedsPush;
 import sd2223.trab1.discovery.Discovery;
 import sd2223.trab1.servers.java.AbstractServer;
+import sd2223.trab1.servers.java.JavaFeedsPull;
+import sd2223.trab1.servers.java.JavaFeedsPush;
 import utils.IP;
 
 import javax.net.ssl.SSLContext;
@@ -56,8 +61,9 @@ public class AbstractSoapServer<T> extends AbstractServer {
 			throw new RuntimeException(e);
 		}
 
-		var endpoint = Endpoint.create(new SoapUsersWebService());
+		var endpoint = Endpoint.create(webservice);
 		endpoint.publish(server.createContext("/soap"));
+
 
 		server.start();
 
