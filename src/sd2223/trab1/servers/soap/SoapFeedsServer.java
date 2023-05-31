@@ -27,17 +27,6 @@ public class SoapFeedsServer extends AbstractSoapServer<SoapFeedsWebService<?>> 
 	public static void main(String[] args) throws Exception {
 		Args.use(args);		
 		Domain.set( args[0], Long.valueOf(args[1]));
-
-		var ip = InetAddress.getLocalHost().getHostAddress();
-
-		var server = HttpsServer.create(new InetSocketAddress(ip, PORT), 0);
-
-		server.setExecutor(Executors.newCachedThreadPool());
-		server.setHttpsConfigurator(new HttpsConfigurator(SSLContext.getDefault()));
-
-		var endpoint = Endpoint.create(new SoapUsersWebService());
-		endpoint.publish(server.createContext("/soap"));
-
 		new SoapFeedsServer().start();
 	}
 }
